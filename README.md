@@ -6,7 +6,7 @@ It provides role-based customer support workflows for **Customers, Agents, and A
 
 ---
 
-## 🚀 Features
+## Features
 
 ### Customer
 
@@ -69,7 +69,7 @@ It provides role-based customer support workflows for **Customers, Agents, and A
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 ### Backend
 
@@ -110,7 +110,7 @@ It provides role-based customer support workflows for **Customers, Agents, and A
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```text
                     ┌──────────────────────┐
@@ -147,7 +147,7 @@ It provides role-based customer support workflows for **Customers, Agents, and A
 
 ---
 
-## 🔐 Security
+## Security
 
 SupportSphere uses multiple security mechanisms:
 
@@ -172,7 +172,7 @@ Secrets such as database passwords, JWT secrets, and AI API keys are supplied th
 
 ---
 
-## 🤖 AI Architecture
+## AI Architecture
 
 The AI support flow is:
 
@@ -207,7 +207,7 @@ The AI functionality was developed incrementally, including conversation storage
 
 ---
 
-## 📚 RAG Knowledge Base
+## RAG Knowledge Base
 
 SupportSphere extends the AI system with a knowledge-base layer.
 
@@ -234,7 +234,7 @@ This allows the AI functionality to use stored application/company knowledge ins
 
 ---
 
-## 🐳 Docker Architecture
+## Docker Architecture
 
 The Dockerized application runs as three main services:
 
@@ -266,7 +266,7 @@ Docker Compose is used to manage the application services and MySQL persistent s
 
 ---
 
-## 📁 Backend Structure
+## Backend Structure
 
 ```text
 src/
@@ -300,7 +300,7 @@ MySQL
 
 ---
 
-## 📁 Frontend Structure
+## Frontend Structure
 
 ```text
 src/
@@ -324,7 +324,7 @@ Protected routes and authentication context are used to control access to applic
 
 ---
 
-## 🗄️ Main Domain Areas
+## Main Domain Areas
 
 SupportSphere contains entities covering:
 
@@ -345,7 +345,7 @@ SupportSphere contains entities covering:
 
 ---
 
-## 🔑 Environment Variables
+## Environment Variables
 
 Create a local `.env` file for Docker configuration.
 
@@ -367,7 +367,7 @@ The repository uses `.gitignore` to prevent environment files and other local/de
 
 ---
 
-## ▶️ Running Locally
+## Running Locally
 
 ### Backend
 
@@ -396,7 +396,7 @@ The development frontend runs through the Vite development server.
 
 ---
 
-## 🐳 Running with Docker
+## Running with Docker
 
 Build the backend image:
 
@@ -430,7 +430,7 @@ docker compose down
 
 ---
 
-## 🌐 Docker URLs
+## Docker URLs
 
 When running the Dockerized application:
 
@@ -460,7 +460,7 @@ Authentication and authorization are applied according to the user's role and th
 
 ---
 
-## 🔄 Core Support Workflow
+## Core Support Workflow
 
 ```text
 Customer
@@ -506,7 +506,7 @@ AI Response
 
 ---
 
-## ☁️ AWS Preparation
+## AWS Preparation
 
 The project has also been prepared conceptually for AWS deployment.
 
@@ -533,72 +533,24 @@ AWS resources can be configured when actual deployment is required.
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
-Screenshots can be added here as the project portfolio is prepared.
-
-Suggested sections:
-
-### Customer Dashboard
-
-```text
-Add screenshot here
-```
+![Customer Dashboard](screenshots/customer-dashboard.png)
 
 ### Agent Dashboard
 
-```text
-Add screenshot here
-```
+![Agent Dashboard](screenshots/agent-dashboard.png)
 
 ### Admin Dashboard
 
-```text
-Add screenshot here
-```
-
-### Ticket Details
-
-```text
-Add screenshot here
-```
+![Admin Dashboard](screenshots/admin-dashboard.png)
 
 ### AI Customer Support
 
-```text
-Add screenshot here
+![AI Customer Support](screenshots/ai-dashboard.png)
 ```
 
----
-
-## 📌 Project Status
-
-| Phase                          | Status         |
-| ------------------------------ | -------------- |
-| Requirements & Planning        | ✅ Complete     |
-| System Architecture            | ✅ Complete     |
-| Database Design                | ✅ Complete     |
-| Spring Boot Setup              | ✅ Complete     |
-| Entities & Repositories        | ✅ Complete     |
-| Services & Business Logic      | ✅ Complete     |
-| REST APIs                      | ✅ Complete     |
-| Authentication & Authorization | ✅ Complete     |
-| React Frontend                 | ✅ Complete     |
-| Backend ↔ React Integration    | ✅ Complete     |
-| Customer & Ticket Management   | ✅ Complete     |
-| Agent/Admin Dashboards         | ✅ Complete     |
-| AI Features                    | ✅ Complete     |
-| RAG Knowledge Base             | ✅ Complete     |
-| Docker                         | ✅ Complete     |
-| AWS Preparation                | ✅ Complete     |
-| Testing & Security             | ✅ Complete     |
-| GitHub & Documentation         | 🔄 In Progress |
-| Resume & Project Explanation   | ⏳ Next         |
-| Interview Preparation          | ⏳ Planned      |
-
----
-
-## 👨‍💻 Developer
+## Developer
 
 **Sai Prashanth**
 
@@ -608,6 +560,6 @@ GitHub: `praSHAnTH630490`
 
 ---
 
-## 📄 License
+## License
 
 This project is currently maintained as a personal portfolio and learning project.
