@@ -1,0 +1,39 @@
+services:
+
+  mysql:
+    image: mysql:8.0
+    container_name: supportsphere-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: support_sphere
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - supportsphere_mysql_data:/var/lib/mysql
+
+  backend:
+    image: supportsphere-backend:latest
+    container_name: supportsphere-backend
+    restart: unless-stopped
+    depends_on:
+      - mysql
+    environment:
+      DB_URL: ${DB_URL}
+      DB_USERNAME: ${DB_USERNAME}
+      DB_PASSWORD: ${DB_PASSWORD}
+      AI_API_KEY: ${AI_API_KEY}
+      JWT_SECRET: ${JWT_SECRET}
+      SPRING_PROFILES_ACTIVE: prod
+    ports:
+      - "8081:8080"
+
+  frontend:
+    image: supportsphere-frontend:latest
+    container_name: supportsphere-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "5173:80"
+
+volumes:
+  supportsphere_mysql_data:
